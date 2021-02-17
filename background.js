@@ -9,7 +9,7 @@ async function getWorkItemInfo(request) {
   const workItem = await getWorkItem(request);
   const type = workItem.fields['System.WorkItemType'];
 
-  if(type !== 'Bug' && type !== 'UserStory') {
+  if(type !== 'Bug' && type !== 'User Story') {
     return [];
   }
 
