@@ -11,15 +11,13 @@
     "storage"
   ],
   "host_permissions": [
-    "*://*.visualstudio.com/",
     "*://dev.azure.com/",
     "*://*.dev.azure.com/"
   ],
   "content_scripts": [
     {
       "matches": [
-        "https://*.visualstudio.com/*/_workitems/edit/*",
-        "https://dev.azure.com/*/_workitems/edit/*"
+        "https://dev.azure.com/*"
       ],
       "js": ["content.js"]
     }
