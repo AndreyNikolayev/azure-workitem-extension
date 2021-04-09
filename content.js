@@ -72,9 +72,11 @@ function getBoxElement(environmentName, isDeployed) {
   svg.setAttribute('src', svgUrl);
 
   const svgDiv = document.createElement("div");
-  svgDiv.setAttribute('style', 'display:flex;padding: 0 2px 0 2px;');
+  svgDiv.setAttribute('style', 'display:flex;padding: 0 2px 0 2px;max-height:18px;max-width:16px;');
   svgDiv.appendChild(svg);
   outerDiv.appendChild(svgDiv);
 
   return outerDiv;
 }
+
+onUrlChange(lastUrl);
